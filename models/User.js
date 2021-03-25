@@ -31,7 +31,7 @@ const userSchema = mongoose.Schema({
     }
 });
 
-const User = mongoose.Model('User', userSchema);    //Model 이름, Schema를 넣어줌
+const User = mongoose.model('User', userSchema);    //Model 이름, Schema를 넣어줌
 
 //다른 곳에서도 이 모듈을 사용할 수 있도록
 module.exports= { User};
